@@ -5,6 +5,22 @@ import "./product-details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { notFound } from "next/navigation";
+import { Metadata } from 'next'
+
+
+
+
+
+export async function generateMetadata({ params }) {
+  const product = await getData(params.id);
+
+  return {
+    title: product.title,
+    describe: product.description
+  }
+}
+
+
 async function getData(id) {
   // await new Promise(resolve => setTimeout(resolve,3000))
   const res = await fetch(`http://localhost:4000/products/${id}`, {

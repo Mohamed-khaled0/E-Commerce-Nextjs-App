@@ -56,42 +56,7 @@
             "title": "Men's Tank Top",
             "description": "Lightweight, soft, and breathable. This Men’s Tank Top is perfect for hot weather or workouts, offering comfort and flexibility without compromising style.",
             "price": 22.99
-          },
-          {
-            "id": "9",
-            "productImg": "https://cdn.pixabay.com/photo/2024/05/13/20/10/ai-generated-8759668_640.jpg",
-            "title": "Women's Perfume",
-            "description": "A luxurious fragrance for women, offering a captivating scent that lasts all day. Perfect for any occasion, this perfume brings elegance and charm.",
-            "price": 75
-          },
-          {
-            "id": "10",
-            "productImg": "https://cdn.pixabay.com/photo/2019/09/03/10/53/watch-4449152_640.jpg",
-            "title": "Classic Men's Gold Watch",
-            "description": "A sophisticated and stylish gold watch for men. Featuring timeless design, durable craftsmanship, and precision for any formal or casual event.",
-            "price": 49.99
-          },
-          {
-            "id": "11",
-            "productImg": "https://cdn.pixabay.com/photo/2021/08/03/06/47/clock-6518632_640.jpg",
-            "title": "Classic Black Watch",
-            "description": "This sleek black watch offers a minimalist and modern design with superior craftsmanship. Ideal for both everyday use and special occasions.",
-            "price": 29.99
-          },
-          {
-            "id": "12",
-            "productImg": "https://cdn.pixabay.com/photo/2021/08/03/06/47/perfume-6518634_640.jpg",
-            "title": "Men's Cologne",
-            "description": "A bold and fresh scent for men. This cologne offers a perfect balance of sophistication and masculinity, lasting all day for any event.",
-            "price": 24.99
-          },
-          {
-            "id": "13",
-            "productImg": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGZvbyUyMHByb2R1Y3R8ZW58MHx8fHwxNjkwMTY5OTU2&ixlib=rb-4.0.3&q=80&w=400",
-            "title": "Classic Men's Pants",
-            "description": "These classic men's pants combine comfort and style. Perfect for both casual and formal wear, they are made from high-quality materials for a premium look.",
-            "price": 120
           }
-          
+
     ]
   }
