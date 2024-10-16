@@ -26,9 +26,7 @@ export default function Home() {
           <p className="sale">
             SALE UP TO <span>30% OFF</span>
           </p>
-          <p className="free-shipping">
-            Get Free Shipping on orders over $99.00
-          </p>
+
           <button>Shop Now</button>
         </section>
       </div>
