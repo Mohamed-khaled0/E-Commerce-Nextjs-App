@@ -1,5 +1,8 @@
 import React from 'react'
-
+export const metadata = {
+  title: "SignIn Page",
+  description:'SignIn Page',
+};
 export default function page() {
   return (
     <div>

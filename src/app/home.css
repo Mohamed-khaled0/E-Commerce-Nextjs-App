@@ -46,7 +46,7 @@ div.top-img {
       font-weight: bold;
     }
     & .sale span {
-      color: crimson;
+      color: rgba(255, 0, 0,.8);
       margin-left: 0.8rem;
     }
   
