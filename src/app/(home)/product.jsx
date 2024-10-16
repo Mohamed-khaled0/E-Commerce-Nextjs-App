@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 
 async function getData() {
-  // await new Promise(resolve => setTimeout(resolve,3000))
+  await new Promise(resolve => setTimeout(resolve,2000))
   const res = await fetch("http://localhost:4000/products", {
     next: {
       revalidate: 0,
@@ -28,7 +28,13 @@ export default async function Product() {
         return (
           <article title={item.title} key={arrData.id} className="card">
             <Link href={`/product-details/${item.id}`}>
-              <Image width={266} height={255}  quality={100} src={item.productImg} alt="" />
+              <Image
+                width={266}
+                height={255}
+                quality={100}
+                src={item.productImg}
+                alt=""
+              />
             </Link>
             <div style={{ width: 266 }} className="content">
               <h1 className="title">{item.title.slice(0, 30)}</h1>

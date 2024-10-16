@@ -1,11 +1,10 @@
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer.jsx";
+import Header from "@/components/header/Header.jsx";
 import React from "react";
 import "./product-details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { notFound } from "next/navigation";
-import { Metadata } from "next";
 import Image from "next/image";
 
 export async function generateMetadata({ params }) {

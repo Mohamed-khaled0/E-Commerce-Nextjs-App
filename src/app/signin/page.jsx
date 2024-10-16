@@ -1,4 +1,6 @@
 import React from 'react'
+import './sign-in.css'
+
 export const metadata = {
   title: "SignIn Page",
   description:'SignIn Page',

@@ -1,4 +1,5 @@
 import React from 'react'
+import './cart.css'
 
 export const metadata = {
     title: "Cart Page",
