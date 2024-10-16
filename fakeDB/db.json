@@ -1,60 +1,97 @@
 {
     "products": [
-      {
-        "id": "1",
-        "productImg": "./images/1.png",
-        "title": "Black Short",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
-        "price": 150
-      },
-      {
-        "id": "2",
-        "productImg": "./images/2.webp",
-        "title": "Men Travel Bag",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
-        "price": 200
-      },
-      {
-        "id": "3",
-        "productImg": "./images/3.webp",
-        "title": "Sport Backpack",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
-        "price": 50
-      },
-      {
-        "id": "4",
-        "productImg": "./images/4.webp",
-        "title": "Casual Men's Shoes",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
-        "price": 300
-      },
-      {
-        "id": "5",
-        "productImg": "./images/5.webp",
-        "title": "Summer Baseball Cap",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
-        "price": 100
-      },
-      {
-        "id": "6",
-        "productImg": "./images/6.webp",
-        "title": "Apple Watch",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
-        "price": 14.99
-      },
-      {
-        "id": "7",
-        "productImg": "./images/7.webp",
-        "title": "Trendy Sunglasses",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
-        "price": 100
-      },
-      {
-        "id": "8",
-        "productImg": "./images/8.png",
-        "title": "Men's Tank Top",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eveniet eos rem molestiae repellendus, ducimus distinctio      perspiciatis veniam, neque iure illo eligendi. Lorem ipsum dolor sit      amet, consectetur adipisicing elit Suscipit consectetur.",
-        "price": 14.99
-      }
+      
+        {
+            "id": "1",
+            "productImg": "./images/1.png",
+            "title": "Black Short",
+            "description": "Bold, breathable, and built for comfort. Perfect for casual wear or active days. The Black Short combines style with flexibility, making it an everyday essential.",
+            "price": 150
+          },
+          {
+            "id": "2",
+            "productImg": "./images/2.webp",
+            "title": "Men Travel Bag",
+            "description": "Durable, spacious, and stylish. The Men Travel Bag is your perfect companion for any trip, offering enough room for essentials while keeping a sleek look.",
+            "price": 200
+          },
+          {
+            "id": "3",
+            "productImg": "./images/3.webp",
+            "title": "Sport Backpack",
+            "description": "Lightweight, functional, and durable. The Sport Backpack keeps your gear secure and accessible, making it ideal for gym sessions or outdoor adventures.",
+            "price": 50
+          },
+          {
+            "id": "4",
+            "productImg": "./images/4.webp",
+            "title": "Casual Men's Shoes",
+            "description": "Comfortable, sleek, and versatile. Casual Men’s Shoes crafted to provide all-day comfort while looking sharp in any setting, from work to weekends.",
+            "price": 300
+          },
+          {
+            "id": "5",
+            "productImg": "./images/5.webp",
+            "title": "Summer Baseball Cap",
+            "description": "Light, breathable, and adjustable. The Summer Baseball Cap is a stylish and practical choice for sunny days, keeping you cool and shaded.",
+            "price": 100
+          },
+          {
+            "id": "6",
+            "productImg": "./images/6.webp",
+            "title": "Apple Watch",
+            "description": "Sleek, smart, and highly functional. The Apple Watch provides seamless connectivity and tracking features, making it your go-to wearable for all activities.",
+            "price": 14.99
+          },
+          {
+            "id": "7",
+            "productImg": "./images/7.webp",
+            "title": "Trendy Sunglasses",
+            "description": "Stylish, UV-protective, and modern. Trendy Sunglasses that not only shield your eyes but also elevate your look with their contemporary design.",
+            "price": 100
+          },
+          {
+            "id": "8",
+            "productImg": "./images/8.png",
+            "title": "Men's Tank Top",
+            "description": "Lightweight, soft, and breathable. This Men’s Tank Top is perfect for hot weather or workouts, offering comfort and flexibility without compromising style.",
+            "price": 22.99
+          },
+          {
+            "id": "9",
+            "productImg": "https://cdn.pixabay.com/photo/2024/05/13/20/10/ai-generated-8759668_640.jpg",
+            "title": "Women's Perfume",
+            "description": "A luxurious fragrance for women, offering a captivating scent that lasts all day. Perfect for any occasion, this perfume brings elegance and charm.",
+            "price": 75
+          },
+          {
+            "id": "10",
+            "productImg": "https://cdn.pixabay.com/photo/2019/09/03/10/53/watch-4449152_640.jpg",
+            "title": "Classic Men's Gold Watch",
+            "description": "A sophisticated and stylish gold watch for men. Featuring timeless design, durable craftsmanship, and precision for any formal or casual event.",
+            "price": 49.99
+          },
+          {
+            "id": "11",
+            "productImg": "https://cdn.pixabay.com/photo/2021/08/03/06/47/clock-6518632_640.jpg",
+            "title": "Classic Black Watch",
+            "description": "This sleek black watch offers a minimalist and modern design with superior craftsmanship. Ideal for both everyday use and special occasions.",
+            "price": 29.99
+          },
+          {
+            "id": "12",
+            "productImg": "https://cdn.pixabay.com/photo/2021/08/03/06/47/perfume-6518634_640.jpg",
+            "title": "Men's Cologne",
+            "description": "A bold and fresh scent for men. This cologne offers a perfect balance of sophistication and masculinity, lasting all day for any event.",
+            "price": 24.99
+          },
+          {
+            "id": "13",
+            "productImg": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGZvbyUyMHByb2R1Y3R8ZW58MHx8fHwxNjkwMTY5OTU2&ixlib=rb-4.0.3&q=80&w=400",
+            "title": "Classic Men's Pants",
+            "description": "These classic men's pants combine comfort and style. Perfect for both casual and formal wear, they are made from high-quality materials for a premium look.",
+            "price": 120
+          }
+          
     ]
   }

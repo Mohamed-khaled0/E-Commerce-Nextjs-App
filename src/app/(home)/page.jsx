@@ -3,6 +3,8 @@ import Footer from "@/components/footer/Footer";
 import '../home.css'
 
 import Product from "./product";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 
 
@@ -26,7 +28,10 @@ export default function Home() {
           <i className="fa-solid fa-check" />
           Recommended for you
         </h1>
-      <Product/>
+       <Suspense fallback={<Loading/>}>
+       <Product/>
+
+       </Suspense>
       </main>
                 <Footer/>
     </>
