@@ -3,56 +3,56 @@
       
         {
             "id": "1",
-            "productImg": "./images/1.png",
+            "productImg": "/images/1.png",
             "title": "Black Short",
             "description": "Bold, breathable, and built for comfort. Perfect for casual wear or active days. The Black Short combines style with flexibility, making it an everyday essential.",
             "price": 150
           },
           {
             "id": "2",
-            "productImg": "./images/2.webp",
+            "productImg": "/images/2.webp",
             "title": "Men Travel Bag",
             "description": "Durable, spacious, and stylish. The Men Travel Bag is your perfect companion for any trip, offering enough room for essentials while keeping a sleek look.",
             "price": 200
           },
           {
             "id": "3",
-            "productImg": "./images/3.webp",
+            "productImg": "/images/3.webp",
             "title": "Sport Backpack",
             "description": "Lightweight, functional, and durable. The Sport Backpack keeps your gear secure and accessible, making it ideal for gym sessions or outdoor adventures.",
             "price": 50
           },
           {
             "id": "4",
-            "productImg": "./images/4.webp",
+            "productImg": "/images/4.webp",
             "title": "Casual Men's Shoes",
             "description": "Comfortable, sleek, and versatile. Casual Men’s Shoes crafted to provide all-day comfort while looking sharp in any setting, from work to weekends.",
             "price": 300
           },
           {
             "id": "5",
-            "productImg": "./images/5.webp",
+            "productImg": "/images/5.webp",
             "title": "Summer Baseball Cap",
             "description": "Light, breathable, and adjustable. The Summer Baseball Cap is a stylish and practical choice for sunny days, keeping you cool and shaded.",
             "price": 100
           },
           {
             "id": "6",
-            "productImg": "./images/6.webp",
+            "productImg": "/images/6.webp",
             "title": "Apple Watch",
             "description": "Sleek, smart, and highly functional. The Apple Watch provides seamless connectivity and tracking features, making it your go-to wearable for all activities.",
             "price": 14.99
           },
           {
             "id": "7",
-            "productImg": "./images/7.webp",
+            "productImg": "/images/7.webp",
             "title": "Trendy Sunglasses",
             "description": "Stylish, UV-protective, and modern. Trendy Sunglasses that not only shield your eyes but also elevate your look with their contemporary design.",
             "price": 100
           },
           {
             "id": "8",
-            "productImg": "./images/8.png",
+            "productImg": "/images/8.png",
             "title": "Men's Tank Top",
             "description": "Lightweight, soft, and breathable. This Men’s Tank Top is perfect for hot weather or workouts, offering comfort and flexibility without compromising style.",
             "price": 22.99

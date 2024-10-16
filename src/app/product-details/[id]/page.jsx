@@ -5,21 +5,17 @@ import "./product-details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { notFound } from "next/navigation";
-import { Metadata } from 'next'
-
-
-
-
+import { Metadata } from "next";
+import Image from "next/image";
 
 export async function generateMetadata({ params }) {
   const product = await getData(params.id);
 
   return {
     title: product.title,
-    describe: product.description
-  }
+    describe: product.description,
+  };
 }
-
 
 async function getData(id) {
   // await new Promise(resolve => setTimeout(resolve,3000))
@@ -30,7 +26,7 @@ async function getData(id) {
   });
 
   if (!res.ok) {
-    notFound()
+    notFound();
   }
 
   return res.json();
@@ -50,7 +46,7 @@ export default async function Page({ params }) {
     >
       <Header />
       <main style={{ textAlign: "center" }} className="flex">
-        <img alt="product-img" src={`.${product.productImg}`} />
+        <Image alt="product-img" width={266} height={355} quality={100} src={`${product.productImg}`} />
         <div className="product-details">
           <div style={{ justifyContent: "space-between" }} className="flex">
             <h2>{product.title}</h2>
@@ -59,10 +55,10 @@ export default async function Page({ params }) {
           <p className="description">{product.description}</p>
           <button className="flex add-to-cart">
             <FontAwesomeIcon
-          className="fa-solid faCartPlus" 
-          style={{ width: "1rem", marginRight: "0.3rem" }}
-          icon={faCartPlus}
-        />
+              className="fa-solid faCartPlus"
+              style={{ width: "1rem", marginRight: "0.3rem" }}
+              icon={faCartPlus}
+            />
             Add To Cart
           </button>
         </div>
