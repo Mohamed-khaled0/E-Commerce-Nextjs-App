@@ -3,6 +3,18 @@ import styles from "./page.module.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import './home.css'
+
+const arr = [
+    {productImg:'./images/1.png'},
+   { productImg:'./images/2.webp'},
+   { productImg:'./images/3.webp'},
+   { productImg:'./images/4.webp'},
+   { productImg:'./images/5.webp'},
+   { productImg:'./images/6.webp'},
+   { productImg:'./images/7.webp'},
+   { productImg:'./images/8.png'},
+]
+
 export default function Home() {
   return (
     <>
@@ -26,206 +38,35 @@ export default function Home() {
           Recommended for you
         </h1>
         <section className="products flex">
-          <article className="card">
-            <a href="/pages/product-details.html">
-              <img width={266} src="./images/1.png" alt="" srcSet="" />
-            </a>
-            <div style={{ width: 266 }} className="content">
-              <h1 className="title">Product Title</h1>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                tempore dolor in, accusantium laudantium accusamus.
-              </p>
-              <div
-                className="flex"
-                style={{
-                  justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
-                }}
-              >
-                <div className="price">$100</div>
-                <button className="add-to-cart flex">
-                  <i className="fa-solid fa-cart-plus" />
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </article>
-          <article className="card">
-            <a href="/pages/product-details.html">
-              <img width={266} src="./images/2.webp" alt="" srcSet="" />
-            </a>
-            <div style={{ width: 266 }} className="content">
-              <h1 className="title">Product Title</h1>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                tempore dolor in, accusantium laudantium accusamus.
-              </p>
-              <div
-                className="flex"
-                style={{
-                  justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
-                }}
-              >
-                <div className="price">$100</div>
-                <button className="add-to-cart flex">
-                  <i className="fa-solid fa-cart-plus" />
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </article>
-          <article className="card">
-            <a href="/pages/product-details.html">
-              <img width={266} src="./images/3.webp" alt="" srcSet="" />
-            </a>
-            <div style={{ width: 266 }} className="content">
-              <h1 className="title">Product Title</h1>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                tempore dolor in, accusantium laudantium accusamus.
-              </p>
-              <div
-                className="flex"
-                style={{
-                  justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
-                }}
-              >
-                <div className="price">$100</div>
-                <button className="add-to-cart flex">
-                  <i className="fa-solid fa-cart-plus" />
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </article>
-          <article className="card">
-            <a href="/pages/product-details.html">
-              <img width={266} src="./images/4.webp" alt="" srcSet="" />
-            </a>
-            <div style={{ width: 266 }} className="content">
-              <h1 className="title">Product Title</h1>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                tempore dolor in, accusantium laudantium accusamus.
-              </p>
-              <div
-                className="flex"
-                style={{
-                  justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
-                }}
-              >
-                <div className="price">$100</div>
-                <button className="add-to-cart flex">
-                  <i className="fa-solid fa-cart-plus" />
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </article>
-          <article className="card">
-            <a href="/pages/product-details.html">
-              <img width={266} src="./images/5.webp" alt="" srcSet="" />
-            </a>
-            <div style={{ width: 266 }} className="content">
-              <h1 className="title">Product Title</h1>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                tempore dolor in, accusantium laudantium accusamus.
-              </p>
-              <div
-                className="flex"
-                style={{
-                  justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
-                }}
-              >
-                <div className="price">$100</div>
-                <button className="add-to-cart flex">
-                  <i className="fa-solid fa-cart-plus" />
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </article>
-          <article className="card">
-            <a href="/pages/product-details.html">
-              <img width={266} src="./images/6.webp" alt="" srcSet="" />
-            </a>
-            <div style={{ width: 266 }} className="content">
-              <h1 className="title">Product Title</h1>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                tempore dolor in, accusantium laudantium accusamus.
-              </p>
-              <div
-                className="flex"
-                style={{
-                  justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
-                }}
-              >
-                <div className="price">$100</div>
-                <button className="add-to-cart flex">
-                  <i className="fa-solid fa-cart-plus" />
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </article>
-          <article className="card">
-            <a href="/pages/product-details.html">
-              <img width={266} src="./images/7.webp" alt="" srcSet="" />
-            </a>
-            <div style={{ width: 266 }} className="content">
-              <h1 className="title">Product Title</h1>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                tempore dolor in, accusantium laudantium accusamus.
-              </p>
-              <div
-                className="flex"
-                style={{
-                  justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
-                }}
-              >
-                <div className="price">$100</div>
-                <button className="add-to-cart flex">
-                  <i className="fa-solid fa-cart-plus" />
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </article>
-          <article className="card">
-            <a href="/pages/product-details.html">
-              <img width={266} src="./images/8.png" alt="" srcSet="" />
-            </a>
-            <div style={{ width: 266 }} className="content">
-              <h1 className="title">Product Title</h1>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                tempore dolor in, accusantium laudantium accusamus.
-              </p>
-              <div
-                className="flex"
-                style={{
-                  justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
-                }}
-              >
-                <div className="price">$100</div>
-                <button className="add-to-cart flex">
-                  <i className="fa-solid fa-cart-plus" />
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </article>
+          {arr.map( (item)=> {
+              return(
+                <article key={item.productImg} className="card">
+                <a href="/pages/product-details.html">
+                  <img width={266} src={item.productImg} alt="" srcSet="" />
+                </a>
+                <div style={{ width: 266 }} className="content">
+                  <h1 className="title">Product Title</h1>
+                  <p className="description">
+                    Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
+                    tempore dolor in, accusantium laudantium accusamus.
+                  </p>
+                  <div
+                    className="flex"
+                    style={{
+                      justifyContent: "space-between",
+                      paddingBottom: "0.7rem",
+                    }}
+                  >
+                    <div className="price">$100</div>
+                    <button className="add-to-cart flex">
+                      <i className="fa-solid fa-cart-plus" />
+                      Add To Cart
+                    </button>
+                  </div>
+                </div>
+              </article>
+              ) ;           
+          })}
         </section>
       </main>
                 <Footer/>
