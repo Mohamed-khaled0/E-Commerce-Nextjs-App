@@ -3,6 +3,7 @@ import React from "react";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import next from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 async function getData() {
     // await new Promise(resolve => setTimeout(resolve,3000))
@@ -13,7 +14,7 @@ async function getData() {
   });
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data");
+    notFound()
   }
 
   return res.json();

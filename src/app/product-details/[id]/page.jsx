@@ -4,6 +4,7 @@ import React from "react";
 import "./product-details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { notFound } from "next/navigation";
 async function getData(id) {
   // await new Promise(resolve => setTimeout(resolve,3000))
   const res = await fetch(`http://localhost:4000/products/${id}`, {
@@ -13,7 +14,7 @@ async function getData(id) {
   });
 
   if (!res.ok) {
-    throw new Error("Failed to fetch data");
+    notFound()
   }
 
   return res.json();
