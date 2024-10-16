@@ -1,8 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import './home.css'
+import '../home.css'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 const arr = [
     {productImg:'./images/1.png'},
@@ -40,7 +41,7 @@ export default function Home() {
               return(
                 <article key={item.productImg} className="card">
                 <a href="/pages/product-details.html">
-                  <img width={266} src={item.productImg} alt="" srcSet="" />
+                  <img width={266} src={item.productImg} alt=""  />
                 </a>
                 <div style={{ width: 266 }} className="content">
                   <h1 className="title">Product Title</h1>
@@ -57,7 +58,10 @@ export default function Home() {
                   >
                     <div className="price">$100</div>
                     <button className="add-to-cart flex">
-                      <i className="fa-solid fa-cart-plus" />
+                      <FontAwesomeIcon 
+                       className="fa-solid fa-cart-plus" 
+                      icon={faCartPlus} 
+                      style={{ width: '.8rem' }}/>
                       Add To Cart
                     </button>
                   </div>
