@@ -1,15 +1,18 @@
 import React from 'react'
-import './sign-in.css'
-import Header from '../../components/footer/Footer.jsx';
+import Header from '../../components/header/Header.jsx';
 import Footer from '../../components/footer/Footer.jsx';
+import './sign-in.css'
+
 
 export const metadata = {
   title: "SignIn Page",
   description:'SignIn Page',
 };
+
 export default function page() {
   return (
     <div style={{
+      
       height: "100vh",
       display: "grid",
       alignItems: "center",

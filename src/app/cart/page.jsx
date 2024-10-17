@@ -1,8 +1,9 @@
 import React from 'react'
 import './cart.css'
-import Header from '../../components/footer/Footer.jsx';
+import Header from '../../components/header/Header.jsx';
 import Footer from '../../components/footer/Footer.jsx';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
     title: "Cart Page",
@@ -36,7 +37,7 @@ export default function Page() {
         height={70}
         quality={100}
         alt=""
-        src="../images/4.webp"
+        src="/images/4.webp"
       />
     </article>
     <article className="product flex">
@@ -50,12 +51,13 @@ export default function Page() {
         <button className="increase">+</button>
       </div>
       <p className="title">Product Title</p>
-      <img
+      <Image
         style={{ borderRadius: "0.22rem" }}
         width={70}
         height={70}
+        quality={100}
         alt=""
-        src="../images/6.webp"
+        src="/images/6.webp"
       />
     </article>
     <article className="product flex">
@@ -69,12 +71,13 @@ export default function Page() {
         <button className="increase">+</button>
       </div>
       <p className="title">Product Title</p>
-      <img
+      <Image
         style={{ borderRadius: "0.22rem" }}
         width={70}
         height={70}
+        quality={100}
         alt=""
-        src="../images/5.webp"
+        src="/images/5.webp"
       />
     </article>
   </section>
@@ -94,7 +97,7 @@ export default function Page() {
     <button disabled="" className="checkout">
       CHECKOUT
     </button>
-    <a href="./signin.html"> Please Sign in to continue. </a>
+    <Link href="/signin"> Please Sign in to continue. </Link>
   </section>
 </main>
 <Footer/>

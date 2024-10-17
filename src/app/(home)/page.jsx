@@ -3,9 +3,9 @@
 import Header from '../../components/header/Header.jsx';
 import Footer from '../../components/footer/Footer.jsx';
 import "../home.css";
-import Product from "./Product";
+import Product from './product.jsx';
 import { Suspense } from "react";
-import Loading from "./Loading";
+import Loading from "./loading.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
