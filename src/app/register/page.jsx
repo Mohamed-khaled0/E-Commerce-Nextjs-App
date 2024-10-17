@@ -1,7 +1,6 @@
 import React from 'react'
-import './register.css'
-import Footer from '@/components/footer/Footer';
-import Header from '@/components/header/Header';
+import Footer from '@/components/footer/Footer.jsx';
+import Header from '@/components/header/Header.jsx';
 
 
 export const metadata = {
