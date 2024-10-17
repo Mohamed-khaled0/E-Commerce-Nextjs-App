@@ -1,65 +1,64 @@
+"use client";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import Image from "next/image";
 
-async function getData() {
-  await new Promise(resolve => setTimeout(resolve,2000))
-  const res = await fetch("http://localhost:4000/products", {
-    next: {
-      revalidate: 0,
-    },
-  });
+export default function Product() {
+  const [arrData, setArrData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  if (!res.ok) {
-    notFound();
-  }
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch("http://localhost:4000/products");
+        if (!res.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const data = await res.json();
+        setArrData(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  return res.json();
-}
-export default async function Product() {
-  const arrData = await getData();
+    fetchData();
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <section className="products flex">
-      {arrData.map((item) => {
-        return (
-          <article title={item.title} key={arrData.id} className="card">
-            <Link href={`/product-details/${item.id}`}>
-              <Image
-                width={266}
-                height={255}
-                quality={100}
-                src={item.productImg}
-                alt=""
-              />
-            </Link>
-            <div style={{ width: 266 }} className="content">
-              <h1 className="title">{item.title.slice(0, 30)}</h1>
-              <p className="description">{item.description.slice(0, 120)}...</p>
-              <div
-                className="flex"
-                style={{
-                  justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
-                }}
-              >
-                <div className="price">{item.price}$</div>
-                <button className="add-to-cart flex">
-                  <FontAwesomeIcon
-                    className="fa-solid fa-cart-plus"
-                    icon={faCartPlus}
-                    style={{ width: ".8rem" }}
-                  />
-                  Add To Cart
-                </button>
-              </div>
+      {arrData.map((item) => (
+        <article title={item.title} key={item.id} className="card">
+          <Link href={`/product-details/${item.id}`}>
+            <Image
+              width={266}
+              height={255}
+              quality={100}
+              src={item.productImg}
+              alt={item.title}
+            />
+          </Link>
+          <div style={{ width: 266 }} className="content">
+            <h1 className="title">{item.title.slice(0, 30)}</h1>
+            <p className="description">{item.description.slice(0, 120)}...</p>
+            <div className="flex" style={{ justifyContent: "space-between", paddingBottom: "0.7rem" }}>
+              <div className="price">{item.price}$</div>
+              <button className="add-to-cart flex">
+                <FontAwesomeIcon icon={faCartPlus} style={{ width: ".8rem" }} />
+                Add To Cart
+              </button>
             </div>
-          </article>
-        );
-      })}
+          </div>
+        </article>
+      ))}
     </section>
   );
 }

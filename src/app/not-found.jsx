@@ -1,5 +1,5 @@
-import Header from '../../components/header/Header.jsx';
-import Footer from '../../components/footer/Footer.jsx';
+import Header from '../components/footer/Footer.jsx';
+import Footer from '../components/footer/Footer.jsx';
 import React from "react";
 
 export default function notFound() {

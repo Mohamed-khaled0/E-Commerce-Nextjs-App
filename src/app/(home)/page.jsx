@@ -1,11 +1,11 @@
+"use client";
+
 import Header from '../../components/header/Header.jsx';
 import Footer from '../../components/footer/Footer.jsx';
-
-
 import "../home.css";
-import Product from "./product";
+import Product from "./Product";
 import { Suspense } from "react";
-import Loading from "./loading";
+import Loading from "./Loading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,17 +19,12 @@ export default function Home() {
           <p className="sale">
             SALE UP TO <span>30% OFF</span>
           </p>
-
-          <button >Shop Now</button>
+          <button>Shop Now</button>
         </section>
       </div>
-      <main className="">
+      <main>
         <h1 className="recommended flex">
-          <FontAwesomeIcon
-            className="fa-solid fa-check"
-            style={{ width: "1.9rem", marginRight: "1.2rem" }}
-            icon={faCheck}
-          />
+          <FontAwesomeIcon className="fa-solid fa-check" icon={faCheck} style={{ width: "1.9rem", marginRight: "1.2rem" }} />
           Recommended for you
         </h1>
         <Suspense fallback={<Loading />}>
@@ -40,3 +35,4 @@ export default function Home() {
     </>
   );
 }
+
