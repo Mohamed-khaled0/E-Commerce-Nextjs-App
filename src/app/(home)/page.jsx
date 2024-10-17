@@ -10,6 +10,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
+
+  const scrollToRecommended = () => {
+    const section = document.getElementById("recommended");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
   return (
     <>
       <div className="top-img">

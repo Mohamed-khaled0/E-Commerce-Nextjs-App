@@ -1,6 +1,5 @@
-// src/app/cart/page.jsx
 
-"use client"; // Add this line to make the component a Client Component
+"use client"; 
 
 import React, { useState } from 'react';
 import './cart.css';
