@@ -2,6 +2,7 @@ import React from 'react'
 import './cart.css'
 import Header from '../../components/footer/Footer.jsx';
 import Footer from '../../components/footer/Footer.jsx';
+import Image from 'next/image';
 
 export const metadata = {
     title: "Cart Page",
@@ -29,10 +30,11 @@ export default function Page() {
         <button className="increase">+</button>
       </div>
       <p className="title">Product Title</p>
-      <img
+      <Image
         style={{ borderRadius: "0.22rem" }}
         width={70}
         height={70}
+        quality={100}
         alt=""
         src="../images/4.webp"
       />
