@@ -1,14 +1,41 @@
-import React from 'react';
+// Add this line to mark this component as a Client Component
+'use client';
+
+import React, { useState } from 'react';
 import Header from '../../components/header/Header.jsx';
 import Footer from '../../components/footer/Footer.jsx';
-import './register.css'
+import './register.css';
 
 export const metadata = {
-  title: "Register Page",
-  description: 'Register Page',
+  title: "Login Page",
+  description: 'Login Page',
 };
 
 export default function Page() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); 
+    setError(''); 
+
+    if (!username || !password) {
+      setError('Please fill in both fields.');
+      return;
+    }
+
+    const userCredentials = { username, password }; 
+
+    console.log('Logging in with:', userCredentials);
+
+    if (username === 'user' && password === 'password') {
+      alert('Login successful!'); 
+    } else {
+      setError('Invalid credentials. Please try again.');
+    }
+  };
+
   return (
     <div style={{
       height: "100vh",
@@ -18,27 +45,19 @@ export default function Page() {
     }}>
       <Header />
       <main className="px-3">
-        <form style={{ textAlign: "left" }}>
+        <form style={{ textAlign: "left" }} onSubmit={handleSubmit}>
+          {error && <div className="alert alert-danger">{error}</div>}
           <div className="mb-4">
             <label htmlFor="username" className="form-label">
-              Username
+              Username or Email
             </label>
             <input
-              type="text" // Changed to text for username
+              type="text"
               className="form-control"
               id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               aria-describedby="usernameHelp"
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="exampleInputEmail1" className="form-label">
-              Email address
-            </label>
-            <input
-              type="email"
-              className="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
             />
           </div>
           <div className="mb-4">
@@ -49,16 +68,12 @@ export default function Page() {
               type="password"
               className="form-control"
               id="exampleInputPassword1"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <div className="mb-3 form-check">
-            <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-            <label className="form-check-label" htmlFor="exampleCheck1">
-              Check me out
-            </label>
-          </div>
           <button type="submit" className="btn btn-primary">
-            Create Account
+            Login
           </button>
         </form>
       </main>
