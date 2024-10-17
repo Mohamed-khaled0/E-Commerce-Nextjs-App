@@ -9,7 +9,12 @@ export const metadata = {
   };
 export default function Page() {
   return (
-    <div>
+    <div style={{
+        height: "100vh",
+        display: "grid",
+        alignItems: "center",
+        gridTemplateRows: "auto 1fr auto",
+      }}>
         <Header/>
         <main style={{ textAlign: "center" }} className="">
   <section className="cart">
